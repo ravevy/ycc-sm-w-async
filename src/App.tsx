@@ -28,7 +28,7 @@ function App() {
     clearInput()
   }}
   
-  return ( <> loaded &&
+  return ( {loaded} &&
     <div className="App">
         <div className='input'>
           <input type="text" placeholder='Title' name={"title"} value={input.title} onChange={handleChange}/>
@@ -39,7 +39,6 @@ function App() {
         {posts.map((posts)=>{return <li key={posts.id}><h4>{posts.title}</h4><p>{posts.body}</p></li>})}
       </div>
     </div>
-  </>
   )
 }
 
